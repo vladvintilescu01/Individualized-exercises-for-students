@@ -4,8 +4,8 @@ from datasets import Dataset
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, TrainingArguments, Trainer, EarlyStoppingCallback
 
 # Global variables
-PATH_FOR_TRAINING_SET = 'D:/ACE_UCV/Master_Anul_I/NLPTM/train_set4.csv'
-OUTPUT_DIR = 'D:/ACE_UCV/Master_Anul_I/NLPTM/Output'
+PATH_FOR_TRAINING_SET = '../dataset/train_set.csv'
+OUTPUT_DIR = 'Output'
 MAX_INPUT_LENGTH = 512
 MAX_TARGET_LENGTH = 256
 
@@ -111,7 +111,6 @@ training_args = TrainingArguments(
     gradient_checkpointing=True,
     max_grad_norm=1.0,
     label_smoothing_factor=0.1,
-    predict_with_generate=False,  # Important for training stability
 )
 
 # Initialize Trainer

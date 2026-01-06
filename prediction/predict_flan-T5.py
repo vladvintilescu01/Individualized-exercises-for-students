@@ -5,7 +5,7 @@ import torch
 torch.cuda.empty_cache()
 
 # Path to your trained model
-MODEL_PATH = "D:/ACE_UCV/Master_Anul_I/NLPTM/Output/final_flan_t5_base_creative"
+MODEL_PATH = "../models/Output/final_flan_t5_base_creative"
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

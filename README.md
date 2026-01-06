@@ -53,7 +53,7 @@ The dataset is available via this link:https://mega.nz/file/C0JilJ4C#AZ7hgaole-2
 
 **Is mandatory**, because the weights created are not available on Git, there are too large in order to be on Git.
 
-1. In **Spyder**, select one of the models (BART is recommened, it is the best).  
+1. In **Spyder**, select one of the models (BART is recommended, it is the best and works properly, the rest are only for test purposes).  
 2. Hit **Run** in Spyder to start training.  
 3. Monitor the console for metrics, losses, and any early‑stopping callbacks.
 

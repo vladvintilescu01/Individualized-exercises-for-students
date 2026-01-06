@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
-MODEL_PATH = "D:/ACE_UCV/Master_Anul_I/NLPTM/Output/final_bart_model"
+MODEL_PATH = "../models/Output/final_bart_model"
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -17,7 +17,7 @@ test_example = {
     "interests": "football",
     "learning_style": "visual",
     "motivation": "low",
-    "exercise_normal": "Find the sum of the neighbors of the number that has exactly the form AA and is between the numbers 35 and 48"
+    "exercise_normal": "A student has 48 apples and wants to put them equally into 6 baskets. How many apples will each basket get?"
 }
 
 

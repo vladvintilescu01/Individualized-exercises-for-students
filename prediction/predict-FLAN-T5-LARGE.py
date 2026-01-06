@@ -2,7 +2,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
 # Path to your trained FLAN-T5-Large model
-MODEL_PATH = "D:/ACE_UCV/Master_Anul_I/NLPTM/Output/final_flan_t5_large_model"
+MODEL_PATH = "../models/Output/final_flan_t5_large_model"
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

@@ -3,8 +3,8 @@ import pandas as pd
 from datasets import Dataset
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, TrainingArguments, Trainer, EarlyStoppingCallback
 
-PATH_FOR_TRAINING_SET = 'D:/ACE_UCV/Master_Anul_I/NLPTM/train_set4.csv'
-OUTPUT_DIR = 'D:/ACE_UCV/Master_Anul_I/NLPTM/Output'
+PATH_FOR_TRAINING_SET = '../dataset/train_set.csv'
+OUTPUT_DIR = 'Output'
 MAX_INPUT_LENGTH = 512
 MAX_TARGET_LENGTH = 256
 
